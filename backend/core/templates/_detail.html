@@ -1,0 +1,516 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+  <div class="body flex-grow-1 px-3">
+    <div class="container-lg">
+      <div class="card mb-4">
+        <div class="card-header">
+          Detalhes do Funcionário
+          <button class="btn btn-link-primary btn-sm" type="button">
+            <svg class="icon text-primary text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">undefined<path fill="var(--ci-primary-color, currentColor)" d="M29.663,482.25l.087.087a24.847,24.847,0,0,0,17.612,7.342,25.178,25.178,0,0,0,8.1-1.345l142.006-48.172,272.5-272.5A88.832,88.832,0,0,0,344.334,42.039l-272.5,272.5L23.666,456.541A24.844,24.844,0,0,0,29.663,482.25Zm337.3-417.584a56.832,56.832,0,0,1,80.371,80.373L411.5,180.873,331.127,100.5ZM99.744,331.884,308.5,123.127,388.873,203.5,180.116,412.256,58.482,453.518Z" class="ci-primary">
+            </path>
+            </svg>
+          </button>
+          <button class="btn btn-link-danger btn-sm" type="button">
+            <svg class="icon text-danger text-danger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">undefined<path fill="var(--ci-primary-color, currentColor)" d="M96,472a23.82,23.82,0,0,0,23.579,24H392.421A23.82,23.82,0,0,0,416,472V152H96Zm32-288H384V464H128Z" class="ci-primary">
+            </path>
+              <rect width="32" height="200" x="168" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+              </rect>
+              <rect width="32" height="200" x="240" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+              </rect>
+              <rect width="32" height="200" x="312" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+              </rect>
+              <path fill="var(--ci-primary-color, currentColor)" d="M328,88V40c0-13.458-9.488-24-21.6-24H205.6C193.488,16,184,26.542,184,40V88H64v32H448V88ZM216,48h80V88H216Z" class="ci-primary">
+              </path>
+            </svg>
+          </button>
+        </div>
+        <div class="card-body">
+          <div class="row align-items-start">
+            <div class="col">
+              <div class="card h-100">
+                <div class="row">
+                  <div class="col-4">
+                    <img class="card-img-top" src="{% static 'assets/img/avatars/1.jpg' %}" style="width: 120px;">
+                  </div>
+                  <div class="col">
+                    <div class="card h-100" style="border: 0px;">
+                      <div class="card-body">
+                        <h5 class="card-title">Rebecca Avraamu</h5>
+                        <p>
+                          <a href=".">rebecca@email.com</a>
+                        </p>
+                        <p>11 98765-4321 <span class="float-end">
+                          <span class="badge bg-success">Ativo</span>
+                        </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="card" style="width: 18rem;">
+                    <div class="card-header">Cargo</div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <div class="table-responsive">
+                          <table class="table align-middle table-hover table-sm">
+                            <tbody class="">
+                              <tr class="">
+                                <td class=""> Cargo </td>
+                                <td class=""> Consectetur </td>
+                              </tr>
+                              <tr class="">
+                                <td class=""> Departamento </td>
+                                <td class=""> Eiusmod </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card mt-2" style="width: 18rem;">
+                    <div class="card-header">Documentos</div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <div class="table-responsive">
+                          <table class="table align-middle table-hover table-sm">
+                            <tbody class="">
+                              <tr class="">
+                                <td class=""> RG </td>
+                                <td class="">780.314.035-0</td>
+                              </tr>
+                              <tr class="">
+                                <td class=""> CPF </td>
+                                <td class="">790.450.643-01</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="card mt-2" style="width: 18rem;">
+                    <div class="card-header">Endereço</div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <div class="table-responsive">
+                          <table class="table align-middle table-hover table-sm">
+                            <tbody class="">
+                              <tr class="">
+                                <td class="" colspan="2">Av. Bartolomeu de Carvalho, 201</td>
+                              </tr>
+                              <tr class="">
+                                <td class=""> Complemento </td>
+                                <td class="">2 andar</td>
+                              </tr>
+                              <tr class="">
+                                <td class=""> Bairro </td>
+                                <td class="">Vila Clarice</td>
+                              </tr>
+                              <tr class="">
+                                <td class=""> Estado </td>
+                                <td class="">São Paulo - SP</td>
+                              </tr>
+                              <tr class="">
+                                <td class=""> CEP </td>
+                                <td class="">01413-000</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <br>
+                  <h6 class="card-subtitle">Observações</h6>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row align-items-start">
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-header"> Telefones <button class="btn btn-outline-success btn-sm float-end" type="button">
+                      <svg class="icon text-success text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">undefined<polygon fill="var(--ci-primary-color, currentColor)" points="440 240 272 240 272 72 240 72 240 240 72 240 72 272 240 272 240 440 272 440 272 272 440 272 440 240" class="ci-primary">
+                      </polygon>
+                      </svg>
+                    </button>
+                    </div>
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table class="table align-middle table-hover table-sm">
+                          <tbody class="">
+                            <tr class="">
+                              <td>11 94222-0000 <br>
+                                <small>Principal</small>
+                              </td>
+                              <td align="right">
+                                <button class="btn btn-link-primary btn-sm" type="button">
+                                  <svg class="icon text-primary text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">undefined<path fill="var(--ci-primary-color, currentColor)" d="M29.663,482.25l.087.087a24.847,24.847,0,0,0,17.612,7.342,25.178,25.178,0,0,0,8.1-1.345l142.006-48.172,272.5-272.5A88.832,88.832,0,0,0,344.334,42.039l-272.5,272.5L23.666,456.541A24.844,24.844,0,0,0,29.663,482.25Zm337.3-417.584a56.832,56.832,0,0,1,80.371,80.373L411.5,180.873,331.127,100.5ZM99.744,331.884,308.5,123.127,388.873,203.5,180.116,412.256,58.482,453.518Z" class="ci-primary">
+                                  </path>
+                                  </svg>
+                                </button>
+                                <button class="btn btn-link-danger btn-sm" type="button">
+                                  <svg class="icon text-danger text-danger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">undefined<path fill="var(--ci-primary-color, currentColor)" d="M96,472a23.82,23.82,0,0,0,23.579,24H392.421A23.82,23.82,0,0,0,416,472V152H96Zm32-288H384V464H128Z" class="ci-primary">
+                                  </path>
+                                    <rect width="32" height="200" x="168" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <rect width="32" height="200" x="240" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <rect width="32" height="200" x="312" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <path fill="var(--ci-primary-color, currentColor)" d="M328,88V40c0-13.458-9.488-24-21.6-24H205.6C193.488,16,184,26.542,184,40V88H64v32H448V88ZM216,48h80V88H216Z" class="ci-primary">
+                                    </path>
+                                  </svg>
+                                </button>
+                              </td>
+                            </tr>
+                            <tr class="">
+                              <td>11 98000-4900 <br>
+                                <small>Celular</small>
+                              </td>
+                              <td align="right">
+                                <button class="btn btn-link-primary btn-sm" type="button">
+                                  <svg class="icon text-primary text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">undefined<path fill="var(--ci-primary-color, currentColor)" d="M29.663,482.25l.087.087a24.847,24.847,0,0,0,17.612,7.342,25.178,25.178,0,0,0,8.1-1.345l142.006-48.172,272.5-272.5A88.832,88.832,0,0,0,344.334,42.039l-272.5,272.5L23.666,456.541A24.844,24.844,0,0,0,29.663,482.25Zm337.3-417.584a56.832,56.832,0,0,1,80.371,80.373L411.5,180.873,331.127,100.5ZM99.744,331.884,308.5,123.127,388.873,203.5,180.116,412.256,58.482,453.518Z" class="ci-primary">
+                                  </path>
+                                  </svg>
+                                </button>
+                                <button class="btn btn-link-danger btn-sm" type="button">
+                                  <svg class="icon text-danger text-danger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">undefined<path fill="var(--ci-primary-color, currentColor)" d="M96,472a23.82,23.82,0,0,0,23.579,24H392.421A23.82,23.82,0,0,0,416,472V152H96Zm32-288H384V464H128Z" class="ci-primary">
+                                  </path>
+                                    <rect width="32" height="200" x="168" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <rect width="32" height="200" x="240" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <rect width="32" height="200" x="312" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <path fill="var(--ci-primary-color, currentColor)" d="M328,88V40c0-13.458-9.488-24-21.6-24H205.6C193.488,16,184,26.542,184,40V88H64v32H448V88ZM216,48h80V88H216Z" class="ci-primary">
+                                    </path>
+                                  </svg>
+                                </button>
+                              </td>
+                            </tr>
+                            <tr class="">
+                              <td>11 98765-4321 <br>
+                                <small>Recado</small>
+                              </td>
+                              <td align="right">
+                                <button class="btn btn-link-primary btn-sm" type="button">
+                                  <svg class="icon text-primary text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">undefined<path fill="var(--ci-primary-color, currentColor)" d="M29.663,482.25l.087.087a24.847,24.847,0,0,0,17.612,7.342,25.178,25.178,0,0,0,8.1-1.345l142.006-48.172,272.5-272.5A88.832,88.832,0,0,0,344.334,42.039l-272.5,272.5L23.666,456.541A24.844,24.844,0,0,0,29.663,482.25Zm337.3-417.584a56.832,56.832,0,0,1,80.371,80.373L411.5,180.873,331.127,100.5ZM99.744,331.884,308.5,123.127,388.873,203.5,180.116,412.256,58.482,453.518Z" class="ci-primary">
+                                  </path>
+                                  </svg>
+                                </button>
+                                <button class="btn btn-link-danger btn-sm" type="button">
+                                  <svg class="icon text-danger text-danger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">undefined<path fill="var(--ci-primary-color, currentColor)" d="M96,472a23.82,23.82,0,0,0,23.579,24H392.421A23.82,23.82,0,0,0,416,472V152H96Zm32-288H384V464H128Z" class="ci-primary">
+                                  </path>
+                                    <rect width="32" height="200" x="168" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <rect width="32" height="200" x="240" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <rect width="32" height="200" x="312" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <path fill="var(--ci-primary-color, currentColor)" d="M328,88V40c0-13.458-9.488-24-21.6-24H205.6C193.488,16,184,26.542,184,40V88H64v32H448V88ZM216,48h80V88H216Z" class="ci-primary">
+                                    </path>
+                                  </svg>
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row align-items-start mt-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-header"> Contatos <button class="btn btn-outline-success btn-sm float-end" type="button">
+                      <svg class="icon text-success text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">undefined<polygon fill="var(--ci-primary-color, currentColor)" points="440 240 272 240 272 72 240 72 240 240 72 240 72 272 240 272 240 440 272 440 272 272 440 272 440 240" class="ci-primary">
+                      </polygon>
+                      </svg>
+                    </button>
+                    </div>
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table class="table align-middle table-hover table-sm">
+                          <tbody class="">
+                            <tr class="">
+                              <td>
+                                <div>Mary Avraamu</div>
+                                <div class="small text-medium-emphasis">mary@email.com</div>
+                                <div class="small text-medium-emphasis">11 94650-0000</div>
+                              </td>
+                              <td align="right">
+                                <button class="btn btn-link-primary btn-sm" type="button">
+                                  <svg class="icon text-primary text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">undefined<path fill="var(--ci-primary-color, currentColor)" d="M29.663,482.25l.087.087a24.847,24.847,0,0,0,17.612,7.342,25.178,25.178,0,0,0,8.1-1.345l142.006-48.172,272.5-272.5A88.832,88.832,0,0,0,344.334,42.039l-272.5,272.5L23.666,456.541A24.844,24.844,0,0,0,29.663,482.25Zm337.3-417.584a56.832,56.832,0,0,1,80.371,80.373L411.5,180.873,331.127,100.5ZM99.744,331.884,308.5,123.127,388.873,203.5,180.116,412.256,58.482,453.518Z" class="ci-primary">
+                                  </path>
+                                  </svg>
+                                </button>
+                                <button class="btn btn-link-danger btn-sm" type="button">
+                                  <svg class="icon text-danger text-danger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">undefined<path fill="var(--ci-primary-color, currentColor)" d="M96,472a23.82,23.82,0,0,0,23.579,24H392.421A23.82,23.82,0,0,0,416,472V152H96Zm32-288H384V464H128Z" class="ci-primary">
+                                  </path>
+                                    <rect width="32" height="200" x="168" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <rect width="32" height="200" x="240" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <rect width="32" height="200" x="312" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <path fill="var(--ci-primary-color, currentColor)" d="M328,88V40c0-13.458-9.488-24-21.6-24H205.6C193.488,16,184,26.542,184,40V88H64v32H448V88ZM216,48h80V88H216Z" class="ci-primary">
+                                    </path>
+                                  </svg>
+                                </button>
+                              </td>
+                            </tr>
+                            <tr class="">
+                              <td>
+                                <div>John Avraamu</div>
+                                <div class="small text-medium-emphasis">john@email.com</div>
+                                <div class="small text-medium-emphasis">11 94650-0001</div>
+                              </td>
+                              <td align="right">
+                                <button class="btn btn-link-primary btn-sm" type="button">
+                                  <svg class="icon text-primary text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">undefined<path fill="var(--ci-primary-color, currentColor)" d="M29.663,482.25l.087.087a24.847,24.847,0,0,0,17.612,7.342,25.178,25.178,0,0,0,8.1-1.345l142.006-48.172,272.5-272.5A88.832,88.832,0,0,0,344.334,42.039l-272.5,272.5L23.666,456.541A24.844,24.844,0,0,0,29.663,482.25Zm337.3-417.584a56.832,56.832,0,0,1,80.371,80.373L411.5,180.873,331.127,100.5ZM99.744,331.884,308.5,123.127,388.873,203.5,180.116,412.256,58.482,453.518Z" class="ci-primary">
+                                  </path>
+                                  </svg>
+                                </button>
+                                <button class="btn btn-link-danger btn-sm" type="button">
+                                  <svg class="icon text-danger text-danger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">undefined<path fill="var(--ci-primary-color, currentColor)" d="M96,472a23.82,23.82,0,0,0,23.579,24H392.421A23.82,23.82,0,0,0,416,472V152H96Zm32-288H384V464H128Z" class="ci-primary">
+                                  </path>
+                                    <rect width="32" height="200" x="168" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <rect width="32" height="200" x="240" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <rect width="32" height="200" x="312" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <path fill="var(--ci-primary-color, currentColor)" d="M328,88V40c0-13.458-9.488-24-21.6-24H205.6C193.488,16,184,26.542,184,40V88H64v32H448V88ZM216,48h80V88H216Z" class="ci-primary">
+                                    </path>
+                                  </svg>
+                                </button>
+                              </td>
+                            </tr>
+                            <tr class="">
+                              <td>
+                                <div>Stewart Avraamu</div>
+                                <div class="small text-medium-emphasis">stewart@email.com</div>
+                                <div class="small text-medium-emphasis">11 94650-0002</div>
+                              </td>
+                              <td align="right">
+                                <button class="btn btn-link-primary btn-sm" type="button">
+                                  <svg class="icon text-primary text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">undefined<path fill="var(--ci-primary-color, currentColor)" d="M29.663,482.25l.087.087a24.847,24.847,0,0,0,17.612,7.342,25.178,25.178,0,0,0,8.1-1.345l142.006-48.172,272.5-272.5A88.832,88.832,0,0,0,344.334,42.039l-272.5,272.5L23.666,456.541A24.844,24.844,0,0,0,29.663,482.25Zm337.3-417.584a56.832,56.832,0,0,1,80.371,80.373L411.5,180.873,331.127,100.5ZM99.744,331.884,308.5,123.127,388.873,203.5,180.116,412.256,58.482,453.518Z" class="ci-primary">
+                                  </path>
+                                  </svg>
+                                </button>
+                                <button class="btn btn-link-danger btn-sm" type="button">
+                                  <svg class="icon text-danger text-danger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">undefined<path fill="var(--ci-primary-color, currentColor)" d="M96,472a23.82,23.82,0,0,0,23.579,24H392.421A23.82,23.82,0,0,0,416,472V152H96Zm32-288H384V464H128Z" class="ci-primary">
+                                  </path>
+                                    <rect width="32" height="200" x="168" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <rect width="32" height="200" x="240" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <rect width="32" height="200" x="312" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <path fill="var(--ci-primary-color, currentColor)" d="M328,88V40c0-13.458-9.488-24-21.6-24H205.6C193.488,16,184,26.542,184,40V88H64v32H448V88ZM216,48h80V88H216Z" class="ci-primary">
+                                    </path>
+                                  </svg>
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="row align-items-start">
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-header"> Permissões <button class="btn btn-outline-primary btn-sm float-end" type="button">
+                      <svg class="icon text-primary text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">undefined<path fill="var(--ci-primary-color, currentColor)" d="M29.663,482.25l.087.087a24.847,24.847,0,0,0,17.612,7.342,25.178,25.178,0,0,0,8.1-1.345l142.006-48.172,272.5-272.5A88.832,88.832,0,0,0,344.334,42.039l-272.5,272.5L23.666,456.541A24.844,24.844,0,0,0,29.663,482.25Zm337.3-417.584a56.832,56.832,0,0,1,80.371,80.373L411.5,180.873,331.127,100.5ZM99.744,331.884,308.5,123.127,388.873,203.5,180.116,412.256,58.482,453.518Z" class="ci-primary">
+                      </path>
+                      </svg>
+                    </button>
+                    </div>
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table class="table align-middle table-sm">
+                          <tbody class="">
+                            <tr>
+                              <td>
+                              </td>
+                              <td>C</td>
+                              <td>R</td>
+                              <td>U</td>
+                              <td>D</td>
+                            </tr>
+                            <tr>
+                              <td>CRM</td>
+                              <td>
+                                <input disabled="" class="form-check-input" type="checkbox">
+                              </td>
+                              <td>
+                                <input disabled="" class="form-check-input" type="checkbox" checked>
+                              </td>
+                              <td>
+                                <input disabled="" class="form-check-input" type="checkbox">
+                              </td>
+                              <td>
+                                <input disabled="" class="form-check-input" type="checkbox">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Financeiro</td>
+                              <td>
+                                <input disabled="" class="form-check-input" type="checkbox" checked>
+                              </td>
+                              <td>
+                                <input disabled="" class="form-check-input" type="checkbox" checked>
+                              </td>
+                              <td>
+                                <input disabled="" class="form-check-input" type="checkbox" checked>
+                              </td>
+                              <td>
+                                <input disabled="" class="form-check-input" type="checkbox">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Contrato</td>
+                              <td>
+                                <input disabled="" class="form-check-input" type="checkbox" checked>
+                              </td>
+                              <td>
+                                <input disabled="" class="form-check-input" type="checkbox" checked>
+                              </td>
+                              <td>
+                                <input disabled="" class="form-check-input" type="checkbox" checked>
+                              </td>
+                              <td>
+                                <input disabled="" class="form-check-input" type="checkbox">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>TimeSheet</td>
+                              <td>
+                                <input disabled="" class="form-check-input" type="checkbox" checked>
+                              </td>
+                              <td>
+                                <input disabled="" class="form-check-input" type="checkbox" checked>
+                              </td>
+                              <td>
+                                <input disabled="" class="form-check-input" type="checkbox" checked>
+                              </td>
+                              <td>
+                                <input disabled="" class="form-check-input" type="checkbox" checked>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Pastas</td>
+                              <td>
+                                <input disabled="" class="form-check-input" type="checkbox" checked>
+                              </td>
+                              <td>
+                                <input disabled="" class="form-check-input" type="checkbox" checked>
+                              </td>
+                              <td>
+                                <input disabled="" class="form-check-input" type="checkbox" checked>
+                              </td>
+                              <td>
+                                <input disabled="" class="form-check-input" type="checkbox">
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row align-items-start mt-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-header"> Dados Bancários <button class="btn btn-outline-success btn-sm float-end" type="button">
+                      <svg class="icon text-success text-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">undefined<polygon fill="var(--ci-primary-color, currentColor)" points="440 240 272 240 272 72 240 72 240 240 72 240 72 272 240 272 240 440 272 440 272 272 440 272 440 240" class="ci-primary">
+                      </polygon>
+                      </svg>
+                    </button>
+                    </div>
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table class="table align-middle table-hover table-sm">
+                          <tbody class="">
+                            <tr class="">
+                              <td>
+                                <div> Banco: 260 - Nubank</div>
+                                <div class="small text-medium-emphasis"> Agência: 001</div>
+                                <div class="small text-medium-emphasis"> Conta: 4200</div>
+                              </td>
+                              <td align="right">
+                                <button class="btn btn-link-primary btn-sm" type="button">
+                                  <svg class="icon text-primary text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">undefined<path fill="var(--ci-primary-color, currentColor)" d="M29.663,482.25l.087.087a24.847,24.847,0,0,0,17.612,7.342,25.178,25.178,0,0,0,8.1-1.345l142.006-48.172,272.5-272.5A88.832,88.832,0,0,0,344.334,42.039l-272.5,272.5L23.666,456.541A24.844,24.844,0,0,0,29.663,482.25Zm337.3-417.584a56.832,56.832,0,0,1,80.371,80.373L411.5,180.873,331.127,100.5ZM99.744,331.884,308.5,123.127,388.873,203.5,180.116,412.256,58.482,453.518Z" class="ci-primary">
+                                  </path>
+                                  </svg>
+                                </button>
+                                <button class="btn btn-link-danger btn-sm" type="button">
+                                  <svg class="icon text-danger text-danger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">undefined<path fill="var(--ci-primary-color, currentColor)" d="M96,472a23.82,23.82,0,0,0,23.579,24H392.421A23.82,23.82,0,0,0,416,472V152H96Zm32-288H384V464H128Z" class="ci-primary">
+                                  </path>
+                                    <rect width="32" height="200" x="168" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <rect width="32" height="200" x="240" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <rect width="32" height="200" x="312" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <path fill="var(--ci-primary-color, currentColor)" d="M328,88V40c0-13.458-9.488-24-21.6-24H205.6C193.488,16,184,26.542,184,40V88H64v32H448V88ZM216,48h80V88H216Z" class="ci-primary">
+                                    </path>
+                                  </svg>
+                                </button>
+                              </td>
+                            </tr>
+                            <tr class="">
+                              <td>
+                                <div> Banco: 77 - Inter</div>
+                                <div class="small text-medium-emphasis"> Agência: 002</div>
+                                <div class="small text-medium-emphasis"> Conta: 3201</div>
+                              </td>
+                              <td align="right">
+                                <button class="btn btn-link-primary btn-sm" type="button">
+                                  <svg class="icon text-primary text-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">undefined<path fill="var(--ci-primary-color, currentColor)" d="M29.663,482.25l.087.087a24.847,24.847,0,0,0,17.612,7.342,25.178,25.178,0,0,0,8.1-1.345l142.006-48.172,272.5-272.5A88.832,88.832,0,0,0,344.334,42.039l-272.5,272.5L23.666,456.541A24.844,24.844,0,0,0,29.663,482.25Zm337.3-417.584a56.832,56.832,0,0,1,80.371,80.373L411.5,180.873,331.127,100.5ZM99.744,331.884,308.5,123.127,388.873,203.5,180.116,412.256,58.482,453.518Z" class="ci-primary">
+                                  </path>
+                                  </svg>
+                                </button>
+                                <button class="btn btn-link-danger btn-sm" type="button">
+                                  <svg class="icon text-danger text-danger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img">undefined<path fill="var(--ci-primary-color, currentColor)" d="M96,472a23.82,23.82,0,0,0,23.579,24H392.421A23.82,23.82,0,0,0,416,472V152H96Zm32-288H384V464H128Z" class="ci-primary">
+                                  </path>
+                                    <rect width="32" height="200" x="168" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <rect width="32" height="200" x="240" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <rect width="32" height="200" x="312" y="216" fill="var(--ci-primary-color, currentColor)" class="ci-primary">
+                                    </rect>
+                                    <path fill="var(--ci-primary-color, currentColor)" d="M328,88V40c0-13.458-9.488-24-21.6-24H205.6C193.488,16,184,26.542,184,40V88H64v32H448V88ZM216,48h80V88H216Z" class="ci-primary">
+                                    </path>
+                                  </svg>
+                                </button>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

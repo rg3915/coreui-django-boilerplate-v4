@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+  <!-- Members -->
+  {% include "dashboard/members.html" %}
+  <!-- Graphic -->
+  {% include "dashboard/traffic.html" %}
+  <!-- Social-->
+  {% include "dashboard/social.html" %}
+  <!-- Traffic & Sales -->
+  {% include "dashboard/traffic_sales.html" %}
+  <!-- Items -->
+  {% include "dashboard/table.html" %}
+{% endblock content %}
